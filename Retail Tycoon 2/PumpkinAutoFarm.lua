@@ -4,7 +4,7 @@ if game:GetService("Workspace").Map:FindFirstChild("Holiday") then
     Functions:Notify("LynXz","Autofarm Started","10")
     for i,v in pairs(game:GetService("Workspace").Map.Holiday.Items:GetChildren()) do
         if v.Pumpkin.Transparency == 0 then
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Pumpkin.CFrame
+            game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = v.Pumpkin.CFrame
             game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
             wait(0.15)
             Functions:Touch(v.Pumpkin)
