@@ -10,6 +10,7 @@ if game:GetService("Workspace").Map:FindFirstChild("Holiday") then
             Functions:Touch(v.Pumpkin)
         end
     end
+    Functions:Notify("LynXz","Autofarm Ended","5")
 else
     Functions:Notify("LynXz","Event has ended","10")
 end
