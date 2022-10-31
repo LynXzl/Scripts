@@ -2,7 +2,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/LynXz
 local Data = loadstring(game:HttpGet("https://raw.githubusercontent.com/LynXzl/Tools/main/GetData.lua"))()
 
 local Window = Library:New({
-    Name = " 🎃LynX's AutoBuy",
+    Name = " 🎃 LynX's AutoBuy",
     FolderToSave = "PlzDeleteMe"
 })
 
@@ -11,7 +11,7 @@ local Settings = {
     Amount = 1,
     Thing = "Halloween",
     Cooldown = 0,
-    InstantDelivery = false
+    InstantDelivery = true
 }
 
 local MainTab = Window:Tab("Home")
@@ -54,7 +54,7 @@ local ThingtoBuy = HomeSection:Dropdown("Thing to Buy", {"Halloween","Toys","Clo
     updatestatus()
 end)
 
-local InstantDelivery = HomeSection:Toggle("Instant Delivery", false,"Toggle", function(val)
+local InstantDelivery = HomeSection:Toggle("Instant Delivery", true,"Toggle", function(val)
     Settings.InstantDelivery = val
 end)
 
