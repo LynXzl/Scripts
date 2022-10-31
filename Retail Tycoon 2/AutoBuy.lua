@@ -44,7 +44,7 @@ local AmountofBuy = HomeSection:Slider("Amount of Buy", 1,100,0,1,"Slider", func
     end
 end)
 
-local BuyCooldown = HomeSection:Slider("Cooldown of Purchases", 0,10,0,1,"Slider", function(val)
+local BuyCooldown = HomeSection:Slider("Cooldown of Purchases", 0,100,0,0.1,"Slider", function(val)
     Settings.Cooldown = val/10
     updatestatus()
 end)
