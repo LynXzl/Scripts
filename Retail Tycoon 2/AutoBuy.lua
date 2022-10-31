@@ -2,7 +2,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/LynXz
 local Data = loadstring(game:HttpGet("https://raw.githubusercontent.com/LynXzl/Tools/main/GetData.lua"))()
 
 local Window = Library:New({
-    Name = " LynX's AutoBuy",
+    Name = " 🎃LynX's AutoBuy",
     FolderToSave = "PlzDeleteMe"
 })
 
@@ -21,7 +21,7 @@ local HomeSection = MainTab:Section("Home")
 local AutoBuyEnabled = HomeSection:Toggle("AutoBuy Enabled", false,"Toggle", function(val)
     Settings.Enabled = val
     if val then
-        Library:Notification("LynX", "AutoBuy Enabled!")
+        Library:Notification("🎃LynX", "AutoBuy Enabled!")
         while wait(Settings.Cooldown) do
             game:GetService("ReplicatedStorage").Remotes.BuyStorage:InvokeServer(Settings.Thing, Settings.Amount, Settings.InstantDelivery)
             if Settings.Enabled == false then
@@ -60,4 +60,4 @@ end)
 
 local Credits = HomeSection:Label("Script Made by "..Data.Devs.LynX)
 
-Library:Notification("LynX", "Script Loaded!")
+Library:Notification("🎃LynX", "Script Loaded!")
