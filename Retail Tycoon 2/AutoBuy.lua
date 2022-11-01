@@ -1,4 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/LynXzl/UI-Libraries/main/SolarisUI.lua"))()
+local Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/LynXzl/Tools/main/Functions.lua"))()
 local Data = loadstring(game:HttpGet("https://raw.githubusercontent.com/LynXzl/Tools/main/GetData.lua"))()
 
 local Window = Library:New({
@@ -60,4 +61,10 @@ end)
 
 local Credits = HomeSection:Label("Script Made by "..Data.Devs.LynX)
 
+local AutoJoinDiscord = HomeSection:Button("AutoJoin Discord", function()
+    Functions:AutoJoinDiscord()
+end)
+
 Library:Notification("🎃LynX", "Script Loaded!")
+
+
