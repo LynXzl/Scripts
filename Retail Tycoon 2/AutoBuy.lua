@@ -3,7 +3,7 @@ local Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/Lyn
 local Data = loadstring(game:HttpGet("https://raw.githubusercontent.com/LynXzl/Tools/main/GetData.lua"))()
 
 local Window = Library:New({
-    Name = " 🎃 LynX's AutoBuy",
+    Name = "🎃 LynX's AutoBuy",
     FolderToSave = "PlzDeleteMe"
 })
 
