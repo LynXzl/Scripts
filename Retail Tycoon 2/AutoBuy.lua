@@ -3,14 +3,14 @@ local Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/Lyn
 local Data = loadstring(game:HttpGet("https://raw.githubusercontent.com/LynXzl/Tools/main/GetData.lua"))()
 
 local Window = Library:New({
-    Name = "🎃 LynX's AutoBuy",
+    Name = "LynX's AutoBuy",
     FolderToSave = "PlzDeleteMe"
 })
 
 local Settings = {
     Enabled = false,
     Amount = 1,
-    Thing = "Halloween",
+    Thing = "Toys",
     Cooldown = 0,
     InstantDelivery = true
 }
@@ -22,7 +22,7 @@ local HomeSection = MainTab:Section("Home")
 local AutoBuyEnabled = HomeSection:Toggle("AutoBuy Enabled", false,"Toggle", function(val)
     Settings.Enabled = val
     if val then
-        Library:Notification("🎃LynX", "AutoBuy Enabled!")
+        Library:Notification("LynX", "AutoBuy Enabled!")
         while wait(Settings.Cooldown) do
             game:GetService("ReplicatedStorage").Remotes.BuyStorage:InvokeServer(Settings.Thing, Settings.Amount, Settings.InstantDelivery)
             if Settings.Enabled == false then
@@ -50,7 +50,7 @@ local BuyCooldown = HomeSection:Slider("Cooldown of Purchases", 0,100,0,1,"Slide
     updatestatus()
 end)
 
-local ThingtoBuy = HomeSection:Dropdown("Thing to Buy", {"Halloween","Toys","Clothing","Shoes","Hats","Candy","Snacks","Canned Food","Boxed Food","Cold Food","Baked Goods","Fruit","Vegetables","Condiments","Beverages","Small Electronics","PC Electronics","PC Peripherals","Office Electronics","Game Consoles","Videogames","Small Appliances","Large Appliances","Kitchenware","Luggage","Vacuum Cleaners","Personal Care","School Supplies","Brass Instruments","String Instruments","Pianos","Small Outdoor Equipment","Large Outdoor Equipment","Garden Tools","Paint Supplies","Lumber","Small Furniture","Large Furniture","Exercise Equipment","Game Tables","Personal Transport","Car Parts","Economy Cars","Jewelry","Guns","Ammo","Military Vehicles","Armored Vehicles"},"Halloween","Dropdown", function(val)
+local ThingtoBuy = HomeSection:Dropdown("Thing to Buy", {"Toys","Clothing","Shoes","Hats","Candy","Snacks","Canned Food","Boxed Food","Cold Food","Baked Goods","Fruit","Vegetables","Condiments","Beverages","Small Electronics","PC Electronics","PC Peripherals","Office Electronics","Game Consoles","Videogames","Small Appliances","Large Appliances","Kitchenware","Luggage","Vacuum Cleaners","Personal Care","School Supplies","Brass Instruments","String Instruments","Pianos","Small Outdoor Equipment","Large Outdoor Equipment","Garden Tools","Paint Supplies","Lumber","Small Furniture","Large Furniture","Exercise Equipment","Game Tables","Personal Transport","Car Parts","Economy Cars","Jewelry","Guns","Ammo","Military Vehicles","Armored Vehicles"},"Toys","Dropdown", function(val)
     Settings.Thing = val
     updatestatus()
 end)
@@ -65,6 +65,4 @@ local AutoJoinDiscord = HomeSection:Button("AutoJoin Discord", function()
     Functions:AutoJoinDiscord()
 end)
 
-Library:Notification("🎃LynX", "Script Loaded!")
-
-
+Library:Notification("LynX", "Script Loaded!")
