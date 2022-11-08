@@ -5,7 +5,7 @@ if game:GetService("Workspace").Map:FindFirstChild("Holiday") then
     for i,v in pairs(game:GetService("Workspace").Map.Holiday.Items:GetChildren()) do
           game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = v.CFrame
           game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-          wait(0.1)
+          wait(0.25)
     end
     Functions:Notify("LynXz","Autofarm Ended","5")
 end
