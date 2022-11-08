@@ -1,5 +1,6 @@
 local Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/LynXzl/Tools/main/Functions.lua"))()
-
+Functions:Notify("LynXz","Halloween event ended!","15")
+--[[
 if game:GetService("Workspace").Map:FindFirstChild("Holiday") then
     Functions:Notify("LynXz","Autofarm Started","10")
     for i,v in pairs(game:GetService("Workspace").Map.Holiday.Items:GetChildren()) do
@@ -14,3 +15,4 @@ if game:GetService("Workspace").Map:FindFirstChild("Holiday") then
 else
     Functions:Notify("LynXz","Event has ended","10")
 end
+]]--
