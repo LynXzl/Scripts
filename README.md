@@ -27,6 +27,27 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/LynXzl/Scripts/main/S
 • Configs
 ```
 ____
+## LynX's Blox Hunt
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LynXzl/Scripts/main/Blox%20Hunt/Script.lua"))()
+```
+```
+• Infinite Health
+• Infinite Energy
+• Unlock Gamepasses
+• Coin Autofarm
+• WalkSpeed
+• Kill Aura
+• Death Note
+• Team Death Note
+• Object Changer [WIP]
+• ESP
+• Teleports
+• Server Info
+• Health & Energy Status UI
+• Configs
+```
+____
 ## LynX's AutoBuy
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LynXzl/Scripts/main/Retail%20Tycoon%202/AutoBuy.lua"))()
