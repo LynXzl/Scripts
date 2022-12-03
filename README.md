@@ -60,18 +60,4 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/LynXzl/Scripts/main/R
   • Cooldown of Purchases
 ```
 ____
-## Pumpkin AutoFarm
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LynXzl/Scripts/main/Retail%20Tycoon%202/PumpkinAutoFarm.lua"))()
-```
-```
-• Pumpkin AutoFarm
-```
-## Philips Coins AutoFarm
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LynXzl/Scripts/main/Retail%20Tycoon%202/PhilipsCoinsAutoFarm.lua"))()
-```
-```
-• Philips Coins AutoFarm
-```
-____
+
