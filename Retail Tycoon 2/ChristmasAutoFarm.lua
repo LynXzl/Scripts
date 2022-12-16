@@ -3,13 +3,13 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/LynXz
 
 Library:Notification("🎅 LynXzl", "AutoFarm Started!")
 
-for i,v in ipairs(game:GetService("Workspace").Map.Holiday.Items:GetChildren()) do
+for i,v in pairs(game:GetService("Workspace").Map.Holiday.Items:GetChildren()) do
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
 wait()
-game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-wait(0.08)
 Functions:Touch(v) 
-wait()
+wait(0.12)
 end
 
 Library:Notification("🎅 LynXzl", "AutoFarm Ended!")
