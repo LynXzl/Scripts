@@ -7,7 +7,7 @@ for i,v in ipairs(game:GetService("Workspace").Map.Holiday.Items:GetChildren()) 
 game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
 wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
-wait()
+wait(0.08)
 Functions:Touch(v) 
 wait()
 end
