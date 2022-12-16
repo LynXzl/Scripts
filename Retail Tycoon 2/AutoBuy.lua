@@ -10,7 +10,7 @@ local Window = Library:New({
 local Settings = {
     Enabled = false,
     Amount = 1,
-    Thing = "Toys",
+    Thing = "Christmas Tree",
     Cooldown = 0,
     InstantDelivery = true
 }
@@ -32,7 +32,7 @@ local AutoBuyEnabled = HomeSection:Toggle("AutoBuy Enabled", false,"Toggle", fun
     end
 end)
 
-local Status = HomeSection:Label("Status: Buying 1 Thing (Halloween) per 0,1 Seconds")
+local Status = HomeSection:Label("Status: Buying 1 Thing (Christmas Tree) per 0,1 Seconds")
 
 function updatestatus()
     Status:Set("Status: Buying "..Settings.Amount.." Things ("..Settings.Thing..") per "..Settings.Cooldown.." Seconds")
@@ -50,7 +50,7 @@ local BuyCooldown = HomeSection:Slider("Cooldown of Purchases", 0,100,0,1,"Slide
     updatestatus()
 end)
 
-local ThingtoBuy = HomeSection:Dropdown("Thing to Buy", {"Toys","Clothing","Shoes","Hats","Candy","Snacks","Canned Food","Boxed Food","Cold Food","Baked Goods","Fruit","Vegetables","Condiments","Beverages","Small Electronics","PC Electronics","PC Peripherals","Office Electronics","Game Consoles","Videogames","Small Appliances","Large Appliances","Kitchenware","Luggage","Vacuum Cleaners","Personal Care","School Supplies","Brass Instruments","String Instruments","Pianos","Small Outdoor Equipment","Large Outdoor Equipment","Garden Tools","Paint Supplies","Lumber","Small Furniture","Large Furniture","Exercise Equipment","Game Tables","Personal Transport","Car Parts","Economy Cars","Jewelry","Guns","Ammo","Military Vehicles","Armored Vehicles"},"Toys","Dropdown", function(val)
+local ThingtoBuy = HomeSection:Dropdown("Thing to Buy", {"Christmas Tree","Toys","Clothing","Shoes","Hats","Candy","Snacks","Canned Food","Boxed Food","Cold Food","Baked Goods","Fruit","Vegetables","Condiments","Beverages","Small Electronics","PC Electronics","PC Peripherals","Office Electronics","Game Consoles","Videogames","Small Appliances","Large Appliances","Kitchenware","Luggage","Vacuum Cleaners","Personal Care","School Supplies","Brass Instruments","String Instruments","Pianos","Small Outdoor Equipment","Large Outdoor Equipment","Garden Tools","Paint Supplies","Lumber","Small Furniture","Large Furniture","Exercise Equipment","Game Tables","Personal Transport","Car Parts","Economy Cars","Jewelry","Guns","Ammo","Military Vehicles","Armored Vehicles"},"Toys","Dropdown", function(val)
     Settings.Thing = val
     updatestatus()
 end)
