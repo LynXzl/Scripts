@@ -4,18 +4,18 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/LynXzl/Scripts/main/S
 ```
 ```
 • Infinite Capacity
-• Item Picker
+• Item Picker [REMOVED]
 • Hitbox Expander
   • Transparency & Size
-• Auto Pickup Mask
+• Auto Pickup Mask [REMOVED]
 • Tesla Gates Removed
-• No Weapon spread [WIP]
-• Auto Pickup 05 Keycard
+• No Weapon spread
+• Auto Pickup 05 Keycard [REMOVED]
 • Unlocked Camera
 • Instant Escape
-• Get Primary / Secondary Ammo / Medikit
-• Death Note
-• Team Death Note
+• Get Primary / Secondary Ammo
+• Death Note [REMOVED]
+• Team Death Note [REMOVED]
 • Mods & Admins Detector
 • Binds
 • Fog / ColorCorrection Disabler
@@ -23,7 +23,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/LynXzl/Scripts/main/S
 • SCP 966 Visible
 • Server & SCP Info
 • Get Drinks in the Lobby
-• Auto Pickup Selected Guns
+• Auto Pickup Selected Guns [REMOVED]
 • Configs
 ```
 ____
